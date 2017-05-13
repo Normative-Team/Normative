@@ -31,7 +31,7 @@ public class CrossModeling {
 	private static final boolean CACHE = false;
 	
 	public static void main(String[] args) {
-		String root = args.length > 0 ? args[0] : "E:/CP/Kavaler/";
+		String root = args.length > 0 ? args[0] : "";
 		Setup.setupParameters(!OPEN_VOCABULARY);
 		Map<String, ProjectData> data = DataReader.read(new File(root + "issue_comments_REPLACECODE_TOKENIZEDBODY_FLAT.csv"));
 		String outFile = root + "cross-entropies" + (OPEN_VOCABULARY ? "OV" : "CV") + (LOCAL ? "WU" : "NU") + (CACHE ? "WC" : "NC") + ".csv";
