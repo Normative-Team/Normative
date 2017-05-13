@@ -1,4 +1,4 @@
-# ASE17-SLP
+# Normative
 This program calculates the average entropy of an entered post using a language model constructed from a specified Github project.
 
 The first argument when starting the program is a path to the training set, the second is the name of a project to test on. The possible projects are listed below:
